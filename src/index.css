@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  /* Tamil Specific Improvements */
+  html[lang="ta"] {
+    font-family: 'Inter', 'Noto Sans Tamil', system-ui, sans-serif;
+  }
+
+  html[lang="ta"] h1, 
+  html[lang="ta"] h2, 
+  html[lang="ta"] h3 {
+    line-height: 1.4 !important; /* Increase line height for tall Tamil characters */
+    letter-spacing: 0.01em;
+  }
+
+  body {
+    @apply bg-brand-cream text-gray-800 m-0 p-0 min-h-screen;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-brand-green-dark;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .btn-primary {
+    @apply bg-brand-yellow text-brand-green-dark font-bold py-3 px-6 rounded-full transition-all duration-300 hover:bg-brand-green hover:text-white shadow-lg hover:shadow-xl active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .nav-link {
+    @apply text-brand-green-dark font-medium hover:text-brand-green transition-colors duration-200;
+  }
+
+  .animate-in {
+    animation-duration: 700ms;
+    animation-fill-mode: both;
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
+  }
+
+  .slide-in-from-left {
+    animation-name: slideInLeft;
+  }
+
+  .slide-in-from-right {
+    animation-name: slideInRight;
+  }
+
+  .slide-in-from-bottom {
+    animation-name: slideInBottom;
+  }
+
+  .zoom-in {
+    animation-name: zoomIn;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  @keyframes slideInBottom {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+}
