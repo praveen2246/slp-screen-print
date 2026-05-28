@@ -2,12 +2,18 @@ import React from 'react';
 import { ArrowRight, Leaf, ShieldCheck, Zap, MessageCircle, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/layout/SEO';
 
 const Home = () => {
-  const { t, language, getWhatsAppUrl } = useLanguage();
+  const { t, language, getWhatsAppUrl, phoneNumber } = useLanguage();
 
   return (
     <div className="overflow-hidden">
+      <SEO
+        title={t('seoHomeTitle')}
+        description={t('seoHomeDesc')}
+        keywords={t('seoHomeKeywords')}
+      />
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-brand-cream pt-20 pb-12 overflow-hidden">
         {/* Background Elements */}
@@ -21,7 +27,7 @@ const Home = () => {
                 <Leaf size={16} />
                 <span>{t('ecoBenefit')}</span>
               </div>
-              
+
               <h1 className={`text-5xl md:text-7xl font-extrabold ${language === 'ta' ? 'leading-[1.3]' : 'leading-tight'}`}>
                 {t('heroTitle').split('&').map((part, i) => (
                   <React.Fragment key={i}>
@@ -29,20 +35,20 @@ const Home = () => {
                   </React.Fragment>
                 ))}
               </h1>
-              
+
               <p className="text-xl text-gray-600 max-w-xl leading-relaxed">
                 {t('heroSubtitle')}
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="tel:+918778601323"
+                <a
+                  href={`tel:+91${phoneNumber}`}
                   className="bg-brand-green-dark text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-brand-green transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Phone size={20} />
                   {t('callNow')}
                 </a>
-                <a 
+                <a
                   href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -51,7 +57,7 @@ const Home = () => {
                   <MessageCircle size={20} />
                   {t('chatWhatsApp')}
                 </a>
-                <Link 
+                <Link
                   to="/products"
                   className="bg-white text-brand-green-dark font-bold py-3 px-8 rounded-full border-2 border-brand-green/20 hover:border-brand-green transition-all duration-300 flex items-center justify-center gap-2"
                 >
@@ -60,12 +66,12 @@ const Home = () => {
                 </Link>
               </div>
             </div>
-            
+
             <div className="relative animate-in fade-in zoom-in duration-1000">
               <div className="absolute inset-0 bg-brand-yellow/20 rounded-3xl rotate-3 scale-105 blur-sm"></div>
-              <img 
-                src="/assets/hero_bags.png" 
-                alt="Eco-friendly Manja Pai" 
+              <img
+                src="/assets/bag_gopi.jpeg"
+                alt="Eco-friendly Manja Pai"
                 className="relative rounded-3xl shadow-2xl border-4 border-white w-full h-auto object-cover"
               />
               {/* Floating Badge */}
@@ -93,7 +99,7 @@ const Home = () => {
             {t('benefitsSubtitle')}
           </p>
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
@@ -129,8 +135,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h2 className="text-4xl md:text-6xl text-white mb-8">{t('readySwitch')}</h2>
           <div className="flex flex-wrap justify-center gap-6">
-            <a 
-              href={getWhatsAppUrl()} 
+            <a
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-yellow text-brand-green-dark font-bold py-4 px-10 rounded-full text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2"
@@ -138,8 +144,8 @@ const Home = () => {
               <MessageCircle size={24} />
               {t('requestSample')}
             </a>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="bg-white/10 text-white border-2 border-white/20 backdrop-blur-sm font-bold py-4 px-10 rounded-full text-lg hover:bg-white hover:text-brand-green-dark transition-all"
             >
               {t('contactSales')}

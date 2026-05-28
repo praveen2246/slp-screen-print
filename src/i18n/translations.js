@@ -8,7 +8,7 @@ export const translations = {
     navContact: "Contact",
     getQuote: "Get a Quote",
     orderWhatsApp: "Order on WhatsApp",
-    
+
     // Home Page
     heroTitle: "Eco-Friendly Manja Pai & Custom Printing",
     heroSubtitle: "Reusable cloth bags for shops, events, and businesses. We combine traditional craftsmanship with modern screen printing technology.",
@@ -25,7 +25,7 @@ export const translations = {
     readySwitch: "Ready to make the switch to eco-friendly branding?",
     requestSample: "Request a Sample",
     contactSales: "Contact Sales",
-    
+
     // Products Page
     ourCollection: "Our Collection",
     collectionSubtitle: "Choose from our range of standardized sizes or contact us for custom dimensions tailored to your specific needs.",
@@ -34,7 +34,21 @@ export const translations = {
     inquireNow: "Inquire Now",
     size: "Size",
     price: "Price",
-    
+
+    // Product Items
+    prod1Title: "Temple & Wedding Thamboolam Bag",
+    prod1Desc: "High-quality eco-friendly cotton bag with traditional temple design. Perfect for wedding thamboolam and religious events. Durable and premium screen printing.",
+    prod2Title: "Retail Jewellery Shopping Bag",
+    prod2Desc: "Premium yellow cotton bag with durable handles. Specifically designed for jewelry shops and luxury retail. Features high-resolution screen printing that highlights your brand.",
+    prod3Title: "Elegant Brand Promotion Bag",
+    prod3Desc: "Vibrant yellow bag with professional green screen printing. Ideal for established retail brands. Made from strong, reusable cotton for long-lasting brand visibility.",
+    prod4Title: "Commercial Shop Carry Bag",
+    prod4Desc: "Eco-friendly alternative for tea shops, grocery outlets, and general retail. High-quality stitching and durable print ensures it can carry daily items with ease.",
+    prod5Title: "Professional Business Bag",
+    prod5Desc: "Sturdy and elegant cloth bag for corporate and professional services. Sharp, high-contrast printing on premium yellow cotton fabric.",
+    prod6Title: "Custom Printed Manja Pai",
+    prod6Desc: "Classic traditional 'Manja Pai' layout. High-quality screen printing on sustainable cotton. Perfect for general utility and eco-conscious branding.",
+
     // Custom Printing Page
     printingTitle: "Custom Screen Printing",
     printingSubtitle: "Make your brand stand out with our high-quality, durable screen printing services. We print everything from simple logos to complex traditional designs.",
@@ -51,7 +65,7 @@ export const translations = {
     gotDesign: "Got a design ready?",
     designCtaDesc: "Contact us for a free digital mockup and pricing for your custom printing project.",
     startProject: "Start Your Project",
-    
+
     // About Page
     aboutTitle: "Our Mission & Story",
     aboutSubtitle: "Sri Lakshmi Priya Screen Print was founded with a simple goal: to replace single-use plastic bags with sustainable, beautiful, and culturally significant Manja Pai.",
@@ -69,7 +83,7 @@ export const translations = {
     communityDesc: "Supporting local artisans and mills is at the core of our business.",
     tradRoots: "Traditional Roots",
     tradRootsDesc: "Proudly preserving the heritage of the traditional Manja Pai.",
-    
+
     // Contact Page
     contactTitle: "Contact Us",
     contactSubtitle: "Have questions about sizes, printing, or bulk orders? Reach out to us and we'll get back to you within 24 hours.",
@@ -93,7 +107,7 @@ export const translations = {
     findOnMap: "Find Us on Map",
     openInMaps: "Open in Google Maps",
     waMessage: "Hi Sri Lakshmi Priya Screen Print, I want to enquire about Manja Pai bags.",
-    
+
     // Footer
     manufacturingDesc: "Manufacturing eco-friendly Manja Pai and providing premium custom screen printing services for all your business needs.",
     quickLinks: "Quick Links",
@@ -101,8 +115,28 @@ export const translations = {
     monSat: "Mon - Sat",
     monSun: "Mon - Sun",
     sunday: "Sunday",
-    closed: "Closed",
     rightsReserved: "All rights reserved. Designed with 🌱 for the planet.",
+
+    // SEO Keys
+    seoHomeTitle: "Sri Lakshmi Priya Screen Print - Traditional Manja Pai & Custom Bag Printing Madurai",
+    seoHomeDesc: "Premium custom screen printing & manufacturing of eco-friendly yellow cloth bags (Manja Pai), thamboolam bags, cotton shopping bags, and tote carriers in Madurai, Tamil Nadu at wholesale prices.",
+    seoHomeKeywords: "manja pai, மஞ்சப்பை, yellow bag printing, cloth bag printing madurai, cotton bags wholesale, thamboolam bags, screen printing madurai, eco friendly bags, Sri Lakshmi Priya Screen Print",
+
+    seoProductsTitle: "Eco-Friendly Cloth Bags Collection & Wholesale Price List - Sri Lakshmi Priya",
+    seoProductsDesc: "Explore our collection of standard and custom sized Manja Pai bags, premium wedding cotton bags, and exhibition tote carriers with wholesale pricing. Order via WhatsApp.",
+    seoProductsKeywords: "manja pai wholesale, yellow bags price, cotton tote bag, custom size bag, cloth bags online, thamboolam bags price",
+
+    seoCustomTitle: "Custom Screen Printing Services for Business Bags in Madurai - Sri Lakshmi Priya",
+    seoCustomDesc: "Professional screen printing services for shopping bags, wedding thamboolam gifts, corporate events, and custom brands. Get a free digital mockup and quote today.",
+    seoCustomKeywords: "screen printing services madurai, custom bag printing, print logo on cloth bag, wedding bag printer, custom thamboolam bag",
+
+    seoAboutTitle: "Our Mission, Story & 20+ Years Experience - Sri Lakshmi Priya Screen Print",
+    seoAboutDesc: "For over two decades, Sri Lakshmi Priya Screen Print has been manufacturing high-quality, zero-waste, eco-friendly cotton bags in the heart of Madurai, Tamil Nadu.",
+    seoAboutKeywords: "cloth bag manufacturer madurai, manja pai history, eco friendly startup, zero waste bags, hand stitched bags tamil nadu",
+
+    seoContactTitle: "Contact Us & Find Our Shop in Madurai - Sri Lakshmi Priya Screen Print",
+    seoContactDesc: "Contact Sri Lakshmi Priya Screen Print in Solai Alagupuram, Madurai for bulk orders, price quotes, and custom bag print queries. Open Monday to Saturday.",
+    seoContactKeywords: "manja pai shop madurai, screen printing shop contact, order yellow bags, business address sri lakshmi priya",
   },
   ta: {
     // Navbar & Common
@@ -113,7 +147,7 @@ export const translations = {
     navContact: "தொடர்புக்கு",
     getQuote: "விலைப்புள்ளி பெற",
     orderWhatsApp: "வாட்ஸ்அப்பில் ஆர்டர் செய்ய",
-    
+
     // Home Page
     heroTitle: "சுற்றுச்சூழல் நட்பு மஞ்சப்பை & அச்சிடுதல்",
     heroSubtitle: "கடைகள், விழாக்கள் மற்றும் வணிகங்களுக்கான மறுபயன்பாட்டு துணி பைகள். பாரம்பரிய கைவினைத்திறனை நவீன ஸ்கிரீன் பிரிண்டிங் தொழில்நுட்பத்துடன் இணைக்கிறோம்.",
@@ -130,7 +164,7 @@ export const translations = {
     readySwitch: "சுற்றுச்சூழல் நட்பு பிராண்டிங்கிற்கு மாற தயாரா?",
     requestSample: "மாதிரி பையைக் கோர",
     contactSales: "விற்பனை பிரிவைத் தொடர்பு கொள்ள",
-    
+
     // Products Page
     ourCollection: "எங்கள் சேகரிப்பு",
     collectionSubtitle: "எங்கள் அளவுகளில் இருந்து தேர்ந்தெடுக்கவும் அல்லது உங்கள் தேவைக்கேற்ப தனிப்பயன் அளவுகளுக்கு எங்களைத் தொடர்பு கொள்ளவும்.",
@@ -139,7 +173,21 @@ export const translations = {
     inquireNow: "இப்போதே விசாரிக்க",
     size: "அளவு",
     price: "விலை",
-    
+
+    // Product Items
+    prod1Title: "கோவில் & திருமண தாம்பூலப் பை",
+    prod1Desc: "உயர்தர சுற்றுச்சூழல் நட்பு பருத்தி பை. கோவில் விழாக்கள் மற்றும் திருமண தாம்பூலங்களுக்கு ஏற்றது. நீடித்த மற்றும் பிரீமியம் ஸ்கிரீன் பிரிண்டிங்.",
+    prod2Title: "நகைக்கடை ஷாப்பிங் பை",
+    prod2Desc: "நீடித்த கைப்பிடிகள் கொண்ட உயர்தர மஞ்சள் பருத்தி பை. நகைக்கடைகள் மற்றும் சொகுசு சில்லறை விற்பனைக்காக பிரத்யேகமாக வடிவமைக்கப்பட்டது.",
+    prod3Title: "பிராண்ட் விளம்பரப் பை",
+    prod3Desc: "தொழில்முறை பச்சை ஸ்கிரீன் பிரிண்டிங் கொண்ட துடிப்பான மஞ்சள் பை. சில்லறை வர்த்தக நிறுவனங்களுக்கு ஏற்றது. நீண்ட கால பிராண்ட் விளம்பரத்திற்காக வலுவான பருத்தியால் ஆனது.",
+    prod4Title: "வணிகக் கடை கேரி பை",
+    prod4Desc: "தேநீர் கடைகள் மற்றும் மளிகைக் கடைகளுக்கான சுற்றுச்சூழல் நட்பு மாற்று. உயர்தர தையல் மற்றும் நீடித்த அச்சு தினசரி பொருட்களை எளிதாக எடுத்துச் செல்ல உறுதி செய்கிறது.",
+    prod5Title: "தொழில்முறை வணிகப் பை",
+    prod5Desc: "கார்ப்பரேட் மற்றும் தொழில்முறை சேவைகளுக்கான வலுவான மற்றும் நேர்த்தியான துணி பை. பிரீமியம் மஞ்சள் பருத்தி துணியில் தெளிவான அச்சிடுதல்.",
+    prod6Title: "தனிப்பயன் அச்சிடப்பட்ட மஞ்சப்பை",
+    prod6Desc: "பாரம்பரிய 'மஞ்சப்பை' வடிவமைப்பு. நிலையான பருத்தியில் உயர்தர ஸ்கிரீன் பிரிண்டிங். பொது பயன்பாடு மற்றும் பிராண்டிங்கிற்கு ஏற்றது.",
+
     // Custom Printing Page
     printingTitle: "தனிப்பயன் ஸ்கிரீன் பிரிண்டிங்",
     printingSubtitle: "எங்களது உயர்தர, நீடித்த ஸ்கிரீன் பிரிண்டிங் சேவைகள் மூலம் உங்கள் பிராண்டை தனித்துவமாக்குங்கள்.",
@@ -156,7 +204,7 @@ export const translations = {
     gotDesign: "வடிவமைப்பு தயாராக உள்ளதா?",
     designCtaDesc: "உங்கள் தனிப்பயன் அச்சிடும் திட்டத்திற்கான விலை விவரங்களுக்கு எங்களைத் தொடர்பு கொள்ளவும்.",
     startProject: "திட்டத்தைத் தொடங்க",
-    
+
     // About Page
     aboutTitle: "எங்கள் நோக்கம் மற்றும் கதை",
     aboutSubtitle: "பிளாஸ்டிக் பைகளுக்குப் பதிலாக நிலையான, அழகான மற்றும் கலாச்சார முக்கியத்துவம் வாய்ந்த மஞ்சப்பைகளை வழங்குவதே எங்கள் நோக்கம்.",
@@ -174,7 +222,7 @@ export const translations = {
     communityDesc: "உள்ளூர் கைவினைஞர்கள் மற்றும் ஆலைகளை ஆதரிப்பதே எங்கள் வணிகத்தின் மையம்.",
     tradRoots: "பாரம்பரிய வேர்கள்",
     tradRootsDesc: "பாரம்பரிய மஞ்சப்பையின் பாரம்பரியத்தைப் பெருமையுடன் பாதுகாக்கிறோம்.",
-    
+
     // Contact Page
     contactTitle: "தொடர்புக்கு",
     contactSubtitle: "அளவுகள் அல்லது ஆர்டர்கள் பற்றி கேள்விகள் உள்ளதா? எங்களைத் தொடர்பு கொள்ளுங்கள், 24 மணிநேரத்திற்குள் பதிலளிப்போம்.",
@@ -198,7 +246,7 @@ export const translations = {
     findOnMap: "வரைபடத்தில் எங்களை காண்க",
     openInMaps: "கூகுள் மேப்பில் பார்க்க",
     waMessage: "வணக்கம் Sri Lakshmi Priya Screen Print, மஞ்சப்பை பற்றிய விவரம் தெரிந்துகொள்ள விரும்புகிறேன்.",
-    
+
     // Footer
     manufacturingDesc: "சுற்றுச்சூழல் நட்பு மஞ்சப்பைகளைத் தயாரித்தல் மற்றும் உங்கள் வணிகத் தேவைகளுக்கான பிரீமியம் அச்சிடும் சேவைகளை வழங்குதல்.",
     quickLinks: "விரைவான இணைப்புகள்",
@@ -206,7 +254,27 @@ export const translations = {
     monSat: "திங்கள் - சனி",
     monSun: "திங்கள் - ஞாயிறு",
     sunday: "ஞாயிறு",
-    closed: "விடுமுறை",
     rightsReserved: "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை. பூமிகாக 🌱 உடன் வடிவமைக்கப்பட்டது.",
+
+    // SEO Keys
+    seoHomeTitle: "ஸ்ரீ லக்ஷ்மி பிரியா ஸ்கிரீன் பிரிண்ட் - பாரம்பரிய மஞ்சப்பை & தனிப்பயன் அச்சிடுதல் மதுரை",
+    seoHomeDesc: "மதுரையில் சுற்றுச்சூழல் நட்பு பாரம்பரிய மஞ்சள் துணி பைகள் (மஞ்சப்பை), திருமண தாம்பூல பைகள், பருத்தி பைகள் ஆகியவற்றின் உயர்தர அச்சிடுதல் மற்றும் தயாரிப்பு. சிறந்த மொத்த விலை.",
+    seoHomeKeywords: "மஞ்சப்பை, மஞ்சப்பை அச்சிடுதல் மதுரை, துணி பை தயாரிப்பாளர், தாம்பூலம் பைகள், ஸ்கிரீன் பிரிண்டிங் மதுரை, சுற்றுச்சூழல் பைகள், ஸ்ரீ லக்ஷ்மி பிரியா ஸ்கிரீன் பிரிண்ட்",
+
+    seoProductsTitle: "சுற்றுச்சூழல் நட்பு துணி பைகள் சேகரிப்பு & மொத்த விலை - ஸ்ரீ லக்ஷ்மி பிரியா",
+    seoProductsDesc: "எங்கள் மஞ்சப்பை பைகள், பிரீமியம் திருமண பருத்தி பைகள் மற்றும் கண்காட்சி கேரியர்களின் மொத்த விலைப்பட்டியலை ஆராயுங்கள். வாட்ஸ்அப்பில் இப்போதே விசாரிக்கவும்.",
+    seoProductsKeywords: "மஞ்சப்பை மொத்த விற்பனை, மஞ்சள் பைகள் விலை, பருத்தி பை, துணி பைகள் விலைப்பட்டியல், திருமண தாம்பூல பை",
+
+    seoCustomTitle: "மதுரையில் வணிக பைகளுக்கான தனிப்பயன் ஸ்கிரீன் பிரிண்டிங் - ஸ்ரீ லக்ஷ்மி பிரியா",
+    seoCustomDesc: "ஷாப்பிங் பைகள், திருமண தாம்பூல பரிசுகள், கார்ப்பரேட் நிகழ்வுகள் மற்றும் தனிப்பயன் பிராண்டுகளுக்கான தொழில்முறை ஸ்கிரீன் பிரிண்டிங் சேவைகள். இலவச மாதிரிக்கு தொடர்பு கொள்ளவும்.",
+    seoCustomKeywords: "ஸ்கிரீன் பிரிண்டிங் சேவைகள் மதுரை, துணி பையில் லோகோ அச்சிடுதல், திருமண பைகள் அச்சிடுதல், தனிப்பயன் அச்சிடும் கடை",
+
+    seoAboutTitle: "எங்கள் நோக்கம், கதை & 20+ ஆண்டுகள் அனுபவம் - ஸ்ரீ லக்ஷ்மி பிரியா",
+    seoAboutDesc: "இரண்டு தசாப்தங்களுக்கும் மேலாக, ஸ்ரீ லக்ஷ்மி பிரியா ஸ்கிரீன் பிரிண்ட் மதுரையில் உயர்தர, கழிவுகள் இல்லாத, சுற்றுச்சூழல் நட்பு பருத்தி பைகளை தயாரித்து வழங்குகிறது.",
+    seoAboutKeywords: "துணி பை உற்பத்தியாளர் மதுரை, மஞ்சப்பை வரலாறு, சுற்றுச்சூழல் நட்பு ஆலை, உள்ளூர் கைவினைஞர்கள்",
+
+    seoContactTitle: "எங்களைத் தொடர்பு கொள்ள & முகவரி - ஸ்ரீ லக்ஷ்மி பிரியா ஸ்கிரீன் பிரிண்ட்",
+    seoContactDesc: "மொத்த ஆர்டர்கள், விலை விவரங்கள் மற்றும் தனிப்பயன் அச்சிடும் விசாரிப்புகளுக்கு மதுரையில் உள்ள ஸ்ரீ லக்ஷ்மி பிரியா ஸ்கிரீன் பிரிண்ட்டை தொடர்பு கொள்ளவும்.",
+    seoContactKeywords: "மஞ்சப்பை கடை மதுரை, ஸ்கிரீன் பிரிண்டிங் கடை முகவரி, மஞ்சள் பை ஆர்டர், ஸ்ரீ லக்ஷ்மி பிரியா தொலைபேசி எண்",
   }
 };

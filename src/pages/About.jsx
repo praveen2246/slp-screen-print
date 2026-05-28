@@ -1,12 +1,18 @@
 import React from 'react';
 import { Leaf, Award, Users, Heart } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/layout/SEO';
 
 const About = () => {
   const { t } = useLanguage();
 
   return (
     <div className="bg-white">
+      <SEO 
+        title={t('seoAboutTitle')} 
+        description={t('seoAboutDesc')} 
+        keywords={t('seoAboutKeywords')} 
+      />
       {/* Hero Section */}
       <section className="bg-brand-cream py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

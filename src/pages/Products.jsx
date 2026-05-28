@@ -2,57 +2,51 @@ import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import ProductCard from '../components/ui/ProductCard';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/layout/SEO';
 
 const Products = () => {
-  const { t, getWhatsAppUrl } = useLanguage();
+  const { t, getWhatsAppUrl, phoneNumber } = useLanguage();
 
   const products = [
     {
-      title: "Small Manja Pai",
-      size: "8\" x 10\"",
-      price: "15",
-      image: "/assets/products_grid.png",
-      description: "Ideal for return gifts, wedding thamboolam, and small retail items. Durable and lightweight."
+      title: t('prod1Title'),
+      image: "/assets/bag_wedding.jpeg",
+      description: t('prod1Desc')
     },
     {
-      title: "Medium Shopping Bag",
-      size: "12\" x 15\"",
-      price: "25",
-      image: "/assets/hero_bags.png",
-      description: "Standard grocery size. Perfect for supermarkets, clothing stores, and daily use."
+      title: t('prod2Title'),
+      image: "/assets/bag_gopi.jpeg",
+      description: t('prod2Desc')
     },
     {
-      title: "Large Exhibition Bag",
-      size: "16\" x 20\"",
-      price: "45",
-      image: "/assets/products_grid.png",
-      description: "Heavy-duty cloth bag for large items, exhibitions, and corporate gift hampers."
+      title: t('prod3Title'),
+      image: "/assets/bag_muthu.jpeg",
+      description: t('prod3Desc')
     },
     {
-      title: "Premium Wedding Bag",
-      size: "14\" x 16\"",
-      price: "60",
-      image: "/assets/hero_bags.png",
-      description: "Double-stitched premium cotton with gold-tinted handles. Perfect for special occasions."
+      title: t('prod4Title'),
+      image: "/assets/bag_thai.jpeg",
+      description: t('prod4Desc')
     },
     {
-      title: "Bottle Carrier Bag",
-      size: "6\" x 14\"",
-      price: "20",
-      image: "/assets/products_grid.png",
-      description: "Specially designed for wine bottles or long containers. Strong reinforced base."
+      title: t('prod5Title'),
+      image: "/assets/bag_nayagar.jpeg",
+      description: t('prod5Desc')
     },
     {
-      title: "Tote Style Manja Pai",
-      size: "15\" x 15\"",
-      price: "35",
-      image: "/assets/hero_bags.png",
-      description: "Modern tote style with wide handles. Comfortable for carrying long distances."
+      title: t('prod6Title'),
+      image: "/assets/bag_wedding.jpeg",
+      description: t('prod6Desc')
     }
   ];
 
   return (
     <div className="bg-brand-cream min-h-screen py-24">
+      <SEO
+        title={t('seoProductsTitle')}
+        description={t('seoProductsDesc')}
+        keywords={t('seoProductsKeywords')}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6">{t('ourCollection')}</h1>
@@ -78,15 +72,15 @@ const Products = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a 
-              href="tel:+918778601323"
+            <a
+              href={`tel:+91${phoneNumber}`}
               className="whitespace-nowrap bg-white text-brand-green-dark font-bold py-4 px-8 rounded-full hover:scale-105 transition-transform shadow-lg flex items-center justify-center gap-2"
             >
               <Phone size={20} />
               {t('callNow')}
             </a>
-            <a 
-              href={getWhatsAppUrl()} 
+            <a
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="whitespace-nowrap bg-brand-green-dark text-white font-bold py-4 px-10 rounded-full hover:scale-105 transition-transform shadow-lg flex items-center justify-center gap-2"

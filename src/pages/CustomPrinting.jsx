@@ -1,9 +1,10 @@
 import React from 'react';
 import { Palette, Printer, CheckCircle2, Image as ImageIcon, Phone, MessageCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import SEO from '../components/layout/SEO';
 
 const CustomPrinting = () => {
-  const { t, getWhatsAppUrl } = useLanguage();
+  const { t, getWhatsAppUrl, phoneNumber } = useLanguage();
 
   const steps = [
     {
@@ -37,6 +38,11 @@ const CustomPrinting = () => {
 
   return (
     <div className="bg-white py-24">
+      <SEO
+        title={t('seoCustomTitle')}
+        description={t('seoCustomDesc')}
+        keywords={t('seoCustomKeywords')}
+      />
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6">{t('printingTitle')}</h1>
@@ -48,9 +54,9 @@ const CustomPrinting = () => {
       {/* Main Feature */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
         <div className="animate-in fade-in slide-in-from-left duration-1000">
-          <img 
-            src="/assets/printing_demo.png" 
-            alt="Screen Printing Process" 
+          <img
+            src="/assets/bag_muthu.jpeg"
+            alt="Screen Printing Process"
             className="rounded-3xl shadow-2xl border-8 border-brand-cream w-full object-cover h-[500px]"
           />
         </div>
@@ -95,15 +101,15 @@ const CustomPrinting = () => {
             {t('designCtaDesc')}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a 
-              href="tel:+918778601323"
+            <a
+              href={`tel:+91${phoneNumber}`}
               className="bg-white text-brand-green-dark font-bold py-4 px-10 rounded-full text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2"
             >
               <Phone size={24} />
               {t('callNow')}
             </a>
-            <a 
-              href={getWhatsAppUrl()} 
+            <a
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-brand-yellow text-brand-green-dark font-bold py-4 px-10 rounded-full text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2"

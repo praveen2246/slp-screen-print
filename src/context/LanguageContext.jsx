@@ -25,6 +25,9 @@ export const LanguageProvider = ({ children }) => {
     }
   }, [language]);
 
+  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+
   const t = (key) => {
     const lang = language || 'en';
     return translations[lang][key] || key;
@@ -36,11 +39,20 @@ export const LanguageProvider = ({ children }) => {
 
   const getWhatsAppUrl = () => {
     const message = t('waMessage');
-    return `https://wa.me/918778601323?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, changeLanguage, t, showSplash, setShowSplash, getWhatsAppUrl }}>
+    <LanguageContext.Provider value={{
+      language,
+      changeLanguage,
+      t,
+      showSplash,
+      setShowSplash,
+      getWhatsAppUrl,
+      phoneNumber,
+      whatsappNumber
+    }}>
       {children}
     </LanguageContext.Provider>
   );
