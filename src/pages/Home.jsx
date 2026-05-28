@@ -130,7 +130,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-brand-green-dark relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <img src="/assets/products_grid.png" alt="Background pattern" className="w-full h-full object-cover grayscale" />
+          <img src="/assets/products_grid.png" alt="Background pattern" loading="lazy" className="w-full h-full object-cover grayscale" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h2 className="text-4xl md:text-6xl text-white mb-8">{t('readySwitch')}</h2>

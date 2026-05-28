@@ -25,8 +25,8 @@ export const LanguageProvider = ({ children }) => {
     }
   }, [language]);
 
-  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER;
+  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER || "9442034877";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "8778601323";
 
   const t = (key) => {
     const lang = language || 'en';
@@ -39,7 +39,9 @@ export const LanguageProvider = ({ children }) => {
 
   const getWhatsAppUrl = () => {
     const message = t('waMessage');
-    return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    // Ensure the number starts with 91 for WhatsApp to work
+    const formattedNumber = whatsappNumber.startsWith('91') ? whatsappNumber : `91${whatsappNumber}`;
+    return `https://wa.me/${formattedNumber}?text=${encodeURIComponent(message)}`;
   };
 
   return (

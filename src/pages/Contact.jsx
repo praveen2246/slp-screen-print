@@ -29,6 +29,13 @@ const Contact = () => {
     const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
+    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+      console.error('EmailJS configuration is missing. Please check your environment variables.');
+      setFormState('error');
+      setTimeout(() => setFormState('idle'), 5000);
+      return;
+    }
+
     const templateParams = {
       name: formData.name,
       phone: formData.phone,
@@ -217,10 +224,10 @@ const Contact = () => {
                 type="submit"
                 disabled={formState === 'sending'}
                 className={`w-full py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-3 ${formState === 'success'
-                    ? 'bg-green-500 text-white'
-                    : formState === 'error'
-                      ? 'bg-red-500 text-white'
-                      : 'bg-brand-green-dark text-white hover:bg-brand-green'
+                  ? 'bg-green-500 text-white'
+                  : formState === 'error'
+                    ? 'bg-red-500 text-white'
+                    : 'bg-brand-green-dark text-white hover:bg-brand-green'
                   }`}
               >
                 {formState === 'idle' && (
