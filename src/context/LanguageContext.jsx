@@ -37,8 +37,8 @@ export const LanguageProvider = ({ children }) => {
     setLanguage(lang);
   };
 
-  const getWhatsAppUrl = () => {
-    const message = t('waMessage');
+  const getWhatsAppUrl = (customMessage) => {
+    const message = customMessage || t('waMessage');
     // Ensure the number starts with 91 for WhatsApp to work
     const formattedNumber = whatsappNumber.startsWith('91') ? whatsappNumber : `91${whatsappNumber}`;
     return `https://wa.me/${formattedNumber}?text=${encodeURIComponent(message)}`;
